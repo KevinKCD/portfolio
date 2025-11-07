@@ -1,0 +1,19 @@
+/* App container using flexbox */
+.app-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar container handled by Navbar */
+.sidebar-container {
+  flex-shrink: 0;
+}
+
+/* Main content fills remaining space */
+.main-content-container {
+  flex: 1;
+  height: 100vh;
+  overflow: auto;
+}
