@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -6,11 +5,12 @@ import './Navbar.css';
 import Profile from '../Images/Profile.png';
 
 const navItems = [
-  { name: 'Home', path: '/', icon: 'bi-house' },
-  { name: 'About', path: '/', icon: 'bi-person' },
-  { name: 'Resume', path: '/services', icon: 'bi-file-earmark-text' },
-  { name: 'Contact', path: '/products', icon: 'bi-envelope' },
+  { name: 'Home', id: 'Homepage', icon: 'bi-house' },
+  { name: 'About', id: 'About', icon: 'bi-person' },
+  { name: 'Resume', id: 'resume', icon: 'bi-file-earmark-text' },
+  { name: 'Contact', id: 'contact', icon: 'bi-envelope' },
 ];
+
 
 const socialIcons = ['bi-instagram', 'bi-linkedin', 'bi-github'];
 
@@ -45,16 +45,26 @@ function Navbar({ collapsed, setCollapsed }) {
       )}
 
       {/* Navigation links */}
-      <ul className="nav flex-column nav-links-list mb-4">
-        {navItems.map(item => (
-          <li key={item.name} className="nav-item">
-            <Link className="nav-link" to={item.path}>
-              <i className={`bi ${item.icon} me-2`}></i>
-              {!collapsed && item.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <ul className="nav flex-column nav-links-list mb-4">
+      {navItems.map(item => (
+        <li key={item.name} className="nav-item">
+          <button
+            className="nav-link btn btn-link"
+            onClick={() => {
+              const section = document.getElementById(item.id);
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
+            <i className={`bi ${item.icon} me-2`}></i>
+            {!collapsed && item.name}
+          </button>
+        </li>
+      ))}
+    </ul>
+
+
 
       {/* Search + Sign Up */}
       {!collapsed && (

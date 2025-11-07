@@ -16,4 +16,11 @@
   flex: 1;
   height: 100vh;
   overflow: auto;
+  scroll-behavior: smooth; /* smooth scrolling */
+
+}
+
+.main-content-container > * {
+  min-height: 100vh;
+  width: 100%;
 }

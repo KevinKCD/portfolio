@@ -16,7 +16,6 @@
   transform: rotateY(180deg);
 }
 
-/* Overlay text container */
 .text-overlay {
   position: absolute;
   color: white;
@@ -24,26 +23,29 @@
   padding-left: 100px;
 }
 
-/* Name (constant) */
 .name {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-/* Subtitle wrapper for typing + underline */
 .subtitle-wrapper {
   position: relative;
   font-size: 2rem;
   display: inline-block;
+  line-height: 1.2;
 }
 
-/* The text being typed */
+.constant {
+  font-weight: 400;
+}
+
 .typed-text {
   white-space: nowrap;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
-/* Blinking cursor */
 .cursor {
   display: inline-block;
   width: 2px;
@@ -54,16 +56,18 @@
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
-/* Dynamic underline */
 .underline {
   position: absolute;
-  bottom: 2px;
-  left: 0;
+  bottom: -6px; /* space below text */
+  left: calc(6.0ch + 0.5ch); /* aligns just after "Trained " */
   height: 3px;
   background-color: #3b82f6;
-  transition: width 0.1s ease-out;
+  transition: width 0.15s ease;
   border-radius: 2px;
+  width: 0;
 }
