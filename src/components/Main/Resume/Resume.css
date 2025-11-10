@@ -1,0 +1,112 @@
+.resume-container {
+  height: auto; /* or remove fixed height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 8rem;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+}
+
+
+.resume-header {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+.resume-section-break {
+  width: 60px;
+  height: 4px;
+  background-color: #3b82f6;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.summary {
+  margin-bottom: 2rem;
+}
+
+.experience-horizontal {
+  display: flex;
+  gap: 2rem;
+}
+
+.experience-half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  padding-bottom: 2rem;
+}
+
+
+/* Each job + timeline container */
+.job-container {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+  flex-shrink: 0;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #3b82f6; /* different color from line */
+  border-radius: 50%;
+  margin-block-end: 4px;
+  margin-block-start: 0.5rem; /*Aligns to role title */
+}
+
+.timeline-line {
+  inline-size: 4px;
+  background-color: #cbd5e1; /* line color */
+  flex-grow: 1; /* fills the height of job content */
+}
+
+/* Job content */
+.job {
+  flex: 1;
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.job-dates {
+  font-weight: 700; /* make the date bold */
+  font-size: 0.95rem; /* slightly larger if needed */
+  color: #333; /* optional darker color for contrast */
+  margin-bottom: 0.5rem;
+}
+
+.job-description {
+  list-style-type: disc; /* keep default bullets, can replace with icons later */
+  padding-left: 1.5rem; /* indent bullets */
+  line-height: 1.8; /* increase line spacing for readability */
+  margin-bottom: 1rem;
+}
+
+/* Optional: if you want company text slightly bolder too */
+.job-company {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}

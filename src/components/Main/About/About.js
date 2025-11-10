@@ -8,16 +8,15 @@ function About() {
 
   return (
     <div id="About" className="about-container">
-      <h1 className="header">About Me</h1>
-      <div className="section-break"></div>
-                <div className="text-content">
-                    <p className='content'>
-                        Hello! I'm Kevin Doan, a passionate software developer with a knack for creating efficient and scalable solutions. With a background in computer science and hands-on experience in various programming languages.
-                    </p>
-                    <p className='content'>
-                        When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or indulging in my love for photography. I'm always eager to learn new skills and take on exciting challenges that push the boundaries of innovation.
-                    </p>
-                </div>
+      <h1 className="about-header">About Me</h1>
+      <div className="about-section-break"></div>
+        <div className="text-content">
+            <p className='content'>
+            Hello! I'm Kevin Doan, a passionate software developer with a knack for creating efficient and scalable solutions. With a background in computer science and hands-on experience in various programming languages.                    </p>
+            <p className='content'>
+            When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or indulging in my love for photography. I'm always eager to learn new skills and take on exciting challenges that push the boundaries of innovation.
+            </p>
+        </div>
       <div className="about-body">
         {/* Left side: profile image */}
         <img src={Profile} alt="Profile" className="profile-pic" />
