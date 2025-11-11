@@ -18,7 +18,7 @@
   width: 60px;
   height: 4px;
   background-color: #3b82f6;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -27,6 +27,7 @@
   gap: 4rem; /* space between image and info container */
   align-items: flex-start;
   padding-top: 0.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .profile-pic {
@@ -45,7 +46,7 @@
 
 .role {
   font-size: 1.7rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .info-grid {
@@ -67,18 +68,16 @@
   flex: 0 0 auto; /* prevent stretching */
 }
 
-.about-gifs {
+.gifs {
   display: flex;
   justify-content: center; /* center all GIFs horizontally */
-  gap: 1.5rem;             /* space between GIFs */
   margin-top: 2rem;
   flex-wrap: wrap;          /* wrap to next line on smaller screens */
 }
 
-.about-gifs img {
+.gifs img {
   width: 120px;             /* same width for all GIFs */
-  height: 120px;            /* same height for all GIFs */
-  object-fit: cover;        /* scale nicely */
+  height: 130px;            /* same height for all GIFs */
   border-radius: 12px;      /* optional rounded corners */
 }
 
