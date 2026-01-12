@@ -5,7 +5,7 @@
 ===================== */
 .sidebar {
   flex-shrink: 0;
-  width: 350px; /* default width */
+  width: 325px; /* default width */
   height: 100vh;
   background: linear-gradient(180deg, #1c1b1b 0%, #1a1717 100%);
   padding-top: 1rem;
@@ -86,7 +86,7 @@
 ===================== */
 .nav-links-list {
   list-style: none;
-  padding: 0;
+  padding: 20;
   margin: 0 0 2rem 0;
 }
 
@@ -94,27 +94,30 @@
   color: #fff;
   font-weight: 500;
   font-size: 1.4rem;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 3rem;
   display: flex;
   align-items: center;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-links-list .nav-link i {
-  margin-right: 0.5rem;
-  transition: color 0.3s ease;
+
+.nav-links-list .nav-item .nav-link {
+  display: flex;          /* keep icon + text in row */
+  align-items: center;
+  width: 100%;            /* fill the full width of the parent */
+  padding: 0.5rem 1rem;   /* optional padding for better hover area */
+  text-align: left;       /* keep text left-aligned */
+  border: none;           /* remove default button border */
+  background: none;       /* remove default button background */
+  cursor: pointer;        /* show pointer on hover */
+ padding-left: 3rem;
 }
 
-.nav-links-list .nav-link:hover {
-  background-color: #343434;
-  border-radius: 4px;
-  color: #f0a500; /* hover color for text */
+.nav-links-list .nav-item .nav-link:hover {
+  color:   #f0a500; /* hover color for text */ /* your existing hover style */
 }
 
-.nav-links-list .nav-link:hover i {
-  color: inherit; /* icon matches text color on hover */
-}
 
 /* =====================
    Search & Sign-Up Buttons
