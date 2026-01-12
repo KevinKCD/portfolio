@@ -4,6 +4,7 @@ import Homepage from "./components/Main/Homepage/Homepage";
 import About from "./components/Main/About/About";
 import "./App.css";
 import Resume from "./components/Main/Resume/Resume";
+import Contact from "./components/Main/Contact/Contact";
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -19,7 +20,8 @@ function App() {
       <div className="main-content-container">
         <Homepage />
         <About />
-        <Resume/> 
+        <Resume />
+        <Contact />
       </div>
     </div>
   );

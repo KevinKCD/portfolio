@@ -66,7 +66,7 @@ function Navbar({ collapsed, setCollapsed }) {
 
 
 
-      {/* Search + Sign Up */}
+      {/* Search + Sign Up
       {!collapsed && (
         <form className="d-flex flex-column p-3">
           <input
@@ -84,7 +84,7 @@ function Navbar({ collapsed, setCollapsed }) {
             </button>
           </Link>
         </form>
-      )}
+      )} */}
     </nav>
   );
 }
