@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import Coding from "../../Images/Coding.gif"; // ✅ adjust path if needed
+import Sanji from "../../Images/Sanji.webp"; 
+
 
 function Contact() {
   const form = useRef();
@@ -108,6 +110,10 @@ function Contact() {
             </button>
           </form>
         </div>
+      </div>
+      <div className="gifs">
+        {/* <img src={Onepiece} alt="Animation" /> */}
+        <img src={Sanji} alt="Animation" />
       </div>
     </div>
   );
