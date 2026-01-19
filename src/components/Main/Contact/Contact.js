@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import Coding from "../../Images/Coding.gif"; // ✅ adjust path if needed
-import Sanji from "../../../Images/Sanji.webp"; 
+import Sanji from "../../Images/Sanji.webp"; 
 
 
 function Contact() {
