@@ -92,7 +92,6 @@ function About() {
         </div>
       </div>
       <div className="gifs">
-        {/* <img src={Onepiece} alt="Animation" /> */}
         <img src={Law} alt="Animation" />
       </div>
     </div>

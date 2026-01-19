@@ -3,7 +3,6 @@ import emailjs from "emailjs-com";
 import "./Contact.css";
 import Coding from "../../Images/Coding.gif"; // ✅ adjust path if needed
 import Sanji from "../../Images/Sanji.webp"; 
-import Law from "../../Images/Law.webp";
 
 
 function Contact() {
@@ -113,8 +112,7 @@ function Contact() {
         </div>
       </div>
       <div className="gifs">
-        {/* <img src={Onepiece} alt="Animation" /> */}
-        <img src={Law} alt="Animation" />
+        <img src={Sanji} alt="Animation" />
       </div>
     </div>
   );
