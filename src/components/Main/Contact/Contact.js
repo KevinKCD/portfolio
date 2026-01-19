@@ -32,7 +32,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <h2 className="contact-header">Contact</h2>
       <div className="contact-section-break"></div>
       <p className="contact-text">
@@ -112,7 +112,6 @@ function Contact() {
         </div>
       </div>
       <div className="gifs">
-        {/* <img src={Onepiece} alt="Animation" /> */}
         <img src={Sanji} alt="Animation" />
       </div>
     </div>
